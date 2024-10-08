@@ -4,85 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Facundo Simeoni</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Sección del encabezado -->
-    <header class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <img src="mi_foto.jpeg" alt="Foto de Facundo Simeoni" class="rounded-circle img-fluid mb-3" width="150">
-            <h1>Facundo Simeoni</h1>
-            <p>Técnico Superior en Desarrollo de Software</p>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Facundo Simeoni</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+     <section id="home" class="container my-5 pt-5" style="background: linear-gradient(to right, #f0f0f0, #ffffff); padding: 60px 0; border-radius: 15px;">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1 class="text-primary" style="font-size: 3rem; font-weight: bold; margin-bottom: 20px;">Facundo Simeoni</h1>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #333;">Soy un Desarrollador de Software especializado en crear soluciones inteligentes para aplicaciones web. Apasionado por la tecnología y siempre en busca de nuevos desafíos para innovar y crecer.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="devel.jpg" alt="Facundo Simeoni" class="img-fluid shadow-lg" style="width: 70%; border-radius: 10px;">
+        </div>
+    </div>
+</section>
 
-    <!-- Sección de información personal -->
-    <section id="informacion-personal" class="py-5">
+    <section id="skills" class="bg-light py-5">
         <div class="container">
-            <h2>Información Personal</h2>
-            <p>
-                Mi objetivo laboral es desarrollar mis conocimientos y habilidades adquiridas, con el propósito de obtener logros, aptitudes, experiencias y desempeñarme dentro de mi trabajo con mente receptiva, amplio criterio, proporcionando mi mayor esfuerzo y disposición para realizar todas las actividades de manera eficiente y eficaz.
-            </p>
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4 my-3">
+                    <img src="PHP.png" alt="PHP" class="img-fluid skill-icon">
+                    <h5 class="mt-3">PHP</h5>
+                    <p>Experiencia en desarrollo de aplicaciones backend con PHP en varios proyectos.</p>
+                </div>
+                <!-- MySQL -->
+                <div class="col-md-4 my-3">
+                    <img src="MySQL.png" alt="MySQL" class="img-fluid skill-icon">
+                    <h5 class="mt-3">MySQL</h5>
+                    <p>Manejo de bases de datos relacionales, diseño y optimización de consultas.</p>
+                </div>
+                <!-- CodeIgniter 4 -->
+                <div class="col-md-4 my-3">
+                    <img src="Codeigniter.png" alt="CodeIgniter 4" class="img-fluid skill-icon">
+                    <h5 class="mt-3">CodeIgniter 4</h5>
+                    <p>Framework como herramienta de trabajo para proyectos eficientes y escalables.</p>
+                </div>
+                <!-- Python -->
+                <div class="col-md-4 my-3">
+                    <img src="Python.png" alt="Python" class="img-fluid skill-icon">
+                    <h5 class="mt-3">Python</h5>
+                    <p>Conocimiento básico y experiencia en proyectos de automatización y análisis de datos.</p>
+                </div>
+                <!-- MongoDB -->
+                <div class="col-md-4 my-3">
+                    <img src="MongoDB.png" alt="MongoDB" class="img-fluid skill-icon">
+                    <h5 class="mt-3">MongoDB</h5>
+                    <p>Experiencia en bases de datos NoSQL para aplicaciones escalables.</p>
+                </div>
+                <!-- HTML -->
+                <div class="col-md-4 my-3">
+                     <img src="html.jpg" alt="HTML" class="img-fluid skill-icon">
+                     <h5 class="mt-3">HTML</h5>
+                     <p>Amplia experiencia en la creación de estructuras semánticas y accesibles para aplicaciones web.</p>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <!-- Sección de estudios -->
-    <section id="estudios" class="bg-light py-5">
+    <!-- Sobre mí Section -->
+    <section id="about-me" class="py-5">
         <div class="container">
-            <h2>Estudios</h2>
-            <ul>
-                <li>Primario completo</li>
-                <li>Secundario completo</li>
-                <li>Terciario completo: Tecnicatura Superior en Desarrollo de Software</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Sección de experiencia -->
-    <section id="experiencia" class="py-5">
-        <div class="container">
-            <h2>Experiencia</h2>
-            <ul>
-                <li>Excel, Word, PowerPoint, Photoshop, Access, Redes Sociales.</li>
-                <li>Desarrollo web: HTML, PHP, CSS, Bootstrap y Python.</li>
-                <li>Frameworks: Codeigniter 3 y 4</li>
-                <li>Manejo de prototipos: Axure</li>
-                <li>Base de datos: MySQL (Navicat y PhpMyAdmin) y NoSQL (MongoDB)</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Sección de habilidades -->
-    <section id="habilidades" class="bg-light py-5">
-        <div class="container">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Responsabilidad</li>
-                <li>Liderazgo y coordinación</li>
-                <li>Autodidacta</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Sección de contacto -->
-    <section id="contacto" class="py-5">
-        <div class="container text-center">
-            <h2>Contacto</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <a href="tel:+542646293463" class="btn btn-primary w-100 mb-3">Número de teléfono</a>
-                    <a href="mailto:facundosimeoni1@gmail.com" class="btn btn-primary w-100 mb-3">Correo electrónico</a>
-                    <a href="https://www.google.com/maps/place/San+Juan,+Argentina" target="_blank" class="btn btn-primary w-100 mb-3">Ubicación</a>
-                    <a href="https://www.linkedin.com/in/facundosimeoni" target="_blank" class="btn btn-primary w-100 mb-3">LinkedIn</a>
-                    <a href="facundo_cv.pdf" target="_blank" class="btn btn-primary w-100 mb-3">Curriculum Vitae</a>
+            <h2 class="text-center mb-5">Sobre mí</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4">
+                    <img src="yo.jpeg" alt="Sobre mí" class="img-fluid rounded-circle shadow-lg" width="250" height="250">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Soy Técnico Superior en Desarrollo de Software con una gran pasión por la tecnología. Me encanta enfrentar nuevos desafíos y encontrar soluciones creativas para mejorar procesos y crear aplicaciones eficientes.
+                    </p>
+                    <p>
+                        Tengo experiencia en desarrollo web utilizando PHP, HTML, Python, MySQL, y bases de datos NoSQL como MongoDB. También cuento con habilidades en automatización con Python y diseño de prototipos. Soy proactivo, trabajo bien en equipo y me gusta aprender de forma autodidacta.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Proyectos Section -->
+     <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Proyectos</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Proyecto 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="codeigniter4.jpg" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Inscripción de Alumnos</h5>
+                            <p class="card-text">Desarrollé un sistema donde los alumnos pueden inscribirse a materias, gestionadas por docentes, utilizando PHP y MySQL.</p>
+                            <a href="https://github.com/facusime/inscripcion_alumnos.git" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="python1.png" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Matriz de Incidencia</h5>
+                            <p class="card-text">Desarrollé scripts en Python para generar al azar una matriz de incidencia arista-vértice, de 7 × 6, para la representación de un grafo no dirigido.</p>
+                            <a href="https://github.com/facusime/matriz_incidencia.git" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="codeigniter4.jpg" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Gestión de Gym</h5>
+                            <p class="card-text">Sistema de gestión para gimnasios con registro de usuarios, instructores y turnos, desarrollado con PHP y MySQL.</p>
+                            <a href="https://github.com/facusime/gestion_gym.git" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contacto Section -->
+     <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <a href="tel:+542646293463" class="btn btn-golden w-100 mb-3">Número de teléfono</a>
+                    <a href="mailto:facundosimeoni1@gmail.com" class="btn btn-golden w-100 mb-3">Correo electrónico</a>
+                    <a href="https://www.google.com/maps/place/San+Juan,+Argentina" target="_blank" class="btn btn-golden w-100 mb-3">Ubicación</a>
+                    <a href="https://www.linkedin.com/in/facundosimeoni" target="_blank" class="btn btn-golden w-100 mb-3">LinkedIn</a>
+                    <a href="facundo_cv.pdf" target="_blank" class="btn btn-golden w-100 mb-3">Curriculum Vitae</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Facundo Simeoni. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

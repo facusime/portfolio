@@ -1,18 +1,15 @@
-/* Fuente personalizada */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Estilos globales */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0; /* Fondo gris claro */
     color: #333; /* Texto en gris oscuro */
+    scroll-behavior: smooth;
 }
 
 /* Encabezado */
 header {
-    background-color: #1e1e2f; /* Negro elegante */
-    color: white;
-    padding: 60px 0;
+    margin-bottom: 80px; 
 }
 
 header h1 {
@@ -21,69 +18,87 @@ header h1 {
 }
 
 header p {
-    font-size: 1.7rem; /* Subtítulo más grande */
+    font-size: 1.5rem; /* Subtítulo más grande */
     font-weight: 400;
 }
 
-/* Sección de información personal */
+/* Secciones */
 section {
-    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 h2 {
-    color: #3498db; /* Azul llamativo */
-    font-size: 2.4rem;
+    color: #2c3e50; /* Azul oscuro */
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-/* Estilos para las listas */
-ul {
-    list-style: none;
-    padding: 0;
+/* Skills Section */
+.skill-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
-ul li {
-    font-size: 1.4rem;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+#skills .card-body {
+    text-align: center;
 }
 
-/* Secciones */
-#informacion-personal, #estudios, #experiencia, #habilidades {
-    background-color: #ffffff; /* Fondo blanco */
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
-    border-radius: 10px;
-    margin-bottom: 30px; /* Separación entre secciones */
+/* Proyectos Section */
+#projects .card-img-top {
+    height: 200px;
+    object-fit: cover;
 }
 
-/* Botones de contacto */
+#projects .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .btn-primary {
     background-color: #d4af37; /* Dorado */
     border-color: #d4af37;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: white;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-primary:hover {
     background-color: #c49b31; /* Dorado más oscuro */
-    transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+    transform: scale(1.05);
+}
+
+/* Botones dorados */
+.btn-golden {
+    background-color: #d4af37; /* Dorado */
+    border-color: #d4af37;
+    color: white;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-golden:hover {
+    background-color: #c49b31; /* Dorado más oscuro */
+    transform: scale(1.05);
 }
 
 /* Imagen de perfil */
-img {
+img.rounded-circle {
     border: 5px solid #eaeaea; /* Borde gris claro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la imagen */
-    width: 250px; /* Tamaño más grande */
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%; /* Imagen redonda */
 }
 
-/* Ajustes para el layout en dispositivos móviles */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.8rem;
@@ -97,16 +112,20 @@ img {
         font-size: 2rem;
     }
 
-    ul li {
-        font-size: 1.2rem;
+    .skill-icon {
+        width: 80px;
+        height: 80px;
     }
 
-    #informacion-personal, #estudios, #experiencia, #habilidades {
-        padding: 20px;
+    #skills .card-body p {
+        font-size: 0.9rem;
     }
 
-    img {
-        width: 180px;
-        height: 180px;
+    #projects .card-img-top {
+        height: 150px;
+    }
+
+    .btn-primary, .btn-golden {
+        font-size: 1rem;
     }
 }
