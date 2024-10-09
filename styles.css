@@ -190,4 +190,17 @@ footer {
         width: 70px;
         height: 70px;
     }
+
+    section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header h1, header p {
+        padding: 0 10px;
+    }
 }
