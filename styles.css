@@ -2,15 +2,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0; /* Fondo gris claro */
-    color: #333; /* Texto en gris oscuro */
+    background-color: #f0f0f0; 
+    color: #333; 
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Encabezado */
 header {
     margin-bottom: 80px; 
     text-align: center;
@@ -18,30 +17,28 @@ header {
 }
 
 header h1 {
-    font-size: 3.5rem; /* Texto más grande */
+    font-size: 3.5rem; 
     font-weight: 700;
 }
 
 header p {
-    font-size: 1.5rem; /* Subtítulo más grande */
+    font-size: 1.5rem; 
     font-weight: 400;
 }
 
-/* Secciones */
 section {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 h2 {
-    color: #2c3e50; /* Azul oscuro */
+    color: #2c3e50; 
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 30px;
     text-align: center;
 }
 
-/* Skills Section */
 .skill-icon {
     width: 100px;
     height: 100px;
@@ -56,7 +53,6 @@ h2 {
     align-items: center;
 }
 
-/* Proyectos Section */
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +80,7 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #d4af37; /* Dorado */
+    background-color: #d4af37; 
     border-color: #d4af37;
     font-size: 1.1rem;
     font-weight: 700;
@@ -93,13 +89,12 @@ h2 {
 }
 
 .btn-primary:hover {
-    background-color: #c49b31; /* Dorado más oscuro */
+    background-color: #c49b31; 
     transform: scale(1.05);
 }
 
-/* Botones dorados */
 .btn-golden {
-    background-color: #d4af37; /* Dorado */
+    background-color: #d4af37; 
     border-color: #d4af37;
     color: white;
     font-weight: 700;
@@ -107,14 +102,13 @@ h2 {
 }
 
 .btn-golden:hover {
-    background-color: #c49b31; /* Dorado más oscuro */
+    background-color: #c49b31; 
     transform: scale(1.05);
 }
 
-/* Imagen de perfil */
 img.rounded-circle {
-    border: 5px solid #eaeaea; /* Borde gris claro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la imagen */
+    border: 5px solid #eaeaea; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 footer {
@@ -127,7 +121,6 @@ footer {
     color: white;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1024px) {
     #projects .card {
         flex: 1 1 calc(50% - 20px);
